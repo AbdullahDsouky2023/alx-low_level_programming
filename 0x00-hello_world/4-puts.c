@@ -1,5 +1,13 @@
 #include <stdio.h>
-/*thiis function is used to creating a statemetnt */
+
+/*
+ * main - Entry point
+ *
+ * Description:function that pring a statement
+ *
+ * Return : Always 0 (success)
+ */
+
 int main(void)
 {
   puts("\"Programming is like building a multilingual puzzle");
