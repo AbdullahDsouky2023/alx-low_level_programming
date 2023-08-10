@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
- * Description:function that pring a statement
+ * Description:function that print with puts
  *
- * Return : Always 0 (success)
+ * Return : Alawys 0 (success)
  */
 
 int main(void)
