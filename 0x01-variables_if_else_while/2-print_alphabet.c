@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  *   main - Entry point
  *
  *   Decription : 'function for priing the alphabet'
