@@ -15,7 +15,7 @@ int main(void)
 	
 	while (i < count )
 	{
-		putchar(hexDigits[i]);
+		putchar(i);
 		if(i == 9)
 			putchar('$');
 		else
