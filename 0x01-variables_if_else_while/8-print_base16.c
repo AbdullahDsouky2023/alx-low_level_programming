@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	char hexDigits[] = "0123456789abcdef"; 
+	char hexDigits[] = "0123456789abcdef";
 	int count = 16;
 	int i = 0;
 
