@@ -10,13 +10,13 @@
 
 int main(void)
 {
-	int count = 10;
-	int i = 0;
+	int count = 57;
+	int i = 48;
 	
 	while (i < count )
 	{
 		putchar(i);
-		if(i == 9)
+		if(i == 57)
 			putchar('$');
 		else
 		{
