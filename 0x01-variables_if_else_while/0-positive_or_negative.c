@@ -7,7 +7,6 @@
  * Description :'function for printing whether the num is + or - or 0'
  *
  * Return : Alawys 0 (Success)
- *
 */
 
 int main(void)
