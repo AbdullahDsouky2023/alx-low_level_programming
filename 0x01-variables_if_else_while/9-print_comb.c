@@ -12,18 +12,18 @@ int main(void)
 {
 	int count = 57;
 	int i = 48;
-	
-	while (i < count )
+
+	while (i < count)
 	{
 		putchar(i);
-		if(i != 57)
+		if (i != 57)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 		i++;
 	}
-	
+
 	putchar('\n');
 	return (0);
 }
