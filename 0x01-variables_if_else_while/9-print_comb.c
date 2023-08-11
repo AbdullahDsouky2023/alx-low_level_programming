@@ -16,9 +16,7 @@ int main(void)
 	while (i < count )
 	{
 		putchar(i);
-		if(i == 57)
-			putchar('$');
-		else
+		if(i != 57)
 		{
 			putchar(',');
 			putchar(' ');
