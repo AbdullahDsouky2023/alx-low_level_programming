@@ -9,20 +9,20 @@
 
 int main(void)
 {
-        char ch = 'a';
+	char ch = 'a';
 	char Cch = 'A';
 
-        while (ch <= 'z')
-        {
-                putchar(ch);
-                ch++;
-        }
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
 	while (Cch <= 'Z')
 	{
 		putchar(Cch);
 		Cch++;
 	}
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 
 }
