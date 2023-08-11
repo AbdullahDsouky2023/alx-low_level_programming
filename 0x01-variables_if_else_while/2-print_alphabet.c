@@ -6,7 +6,7 @@
  *
  *   Description : 'function for priing the alphabet'
  *
- *   Return :0 (Success)
+ *   Return : Always 0 (Success)
  */
 
 int main(void)
@@ -18,7 +18,7 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-	puchar('/n');
+	putchar('/n');
 	return (0);
 
 }
