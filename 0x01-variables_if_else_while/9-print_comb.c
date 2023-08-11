@@ -20,7 +20,8 @@ int main(void)
 			putchar('$');
 		else
 		{
-			putchar('\,');
+			putchar(',');
+			putchar(' ');
 		}
 		i++;
 	}
