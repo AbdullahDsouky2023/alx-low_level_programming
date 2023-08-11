@@ -1,17 +1,18 @@
 #include <stdio.h>
 
- /*
-  *  main - Entry Point
+/**
+  *  main - Entry point
   *
-  *  Description :' function pring number'
+  *  Description: 'the program's description'
   *
-  *  Return : 0 (Success)
- */
+  *  Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	int i=0;
+	int i = 0;
 
-	while (i<10)
+	while (i < 10)
 	{
 		printf("%d", i);
 		i++;
