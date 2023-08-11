@@ -13,10 +13,12 @@ int main(void)
 {
 	char hexDigits[] = "0123456789abcdef"; // Hexadecimal digits
 	int count = 16;
-	
-	for (int i = 0; i < count; i++)
+	int i = 0;
+
+	while (i < count)
 	{
 		putchar(hexDigits[i]);
+		i++;
 	}
 
 	putchar('\n');
