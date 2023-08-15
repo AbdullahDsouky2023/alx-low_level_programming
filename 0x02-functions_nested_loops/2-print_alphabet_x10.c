@@ -16,7 +16,7 @@ void print_alphabet_x10(void)
   {
     _putchar(str);
     str++;
-  if(str > 'z' && counter != 9)
+  if(str > 'z' && counter != 10)
 {
 	str='a';
 	counter++;
