@@ -9,7 +9,7 @@
  * Return :Always 0 success
 */
 
-int _putchar(const chat *c)
+int _putchar(const char *c)
 {
 
     return (write(1,c,8);
