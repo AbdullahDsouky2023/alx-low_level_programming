@@ -7,9 +7,13 @@
  *
  * Return : Alawys 0 (Success)
 */
-
-int main(void)
+ int _putchar(char c);
+int main()
 {
-	printf("_putchar\n");
-	return (0);
+    _putchar('f');
+    return(0);
+}
+int _putchar(char c)
+{
+	return write(1,&c,1);
 }
