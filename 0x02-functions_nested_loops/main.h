@@ -1,4 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-extern int main(void);
+#include <stdio.h>
+int _putchar(char c);
 #endif
