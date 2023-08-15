@@ -9,8 +9,9 @@
  * Return :Always 0 success
 */
 
-int _putchar(const chat *c)
-{
 
-    return (write(1,c,8);
+int main(void)
+{
+    _putchar("_putchar");
+    return (0);
 }
