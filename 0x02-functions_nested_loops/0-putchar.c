@@ -8,13 +8,13 @@
  * 
  * Return :Always 0 success
 */
-
+int _putcahr(const char *c);
 int main(void)
 {
     _putchar("_putchar");
-    returm (0);
+    return (0);
 }
-int _putchar(char c)
+int _putchar(const char *c)
 {
-    return write(1,%c,1);
+    return write(1,c,8);
 }
