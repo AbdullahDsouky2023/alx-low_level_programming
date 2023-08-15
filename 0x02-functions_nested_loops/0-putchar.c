@@ -1,19 +1,20 @@
-#include <stdio.h>
-/*
- *
- * main - Entry point
- *
- * Description :"function for pringing statement"
- *
- * Return : Alawys 0 (Success)
+#include <unistd.h>
+#include <main.h>
+
+/**
+ *  main - Entry point
+ * 
+ * Description :'function that uses put char in universe '
+ * 
+ * Return :Always 0 success
 */
- int _putchar(char c);
-int main()
+
+int main(void)
 {
-    _putchar('_putchar');
-    return(0);
+    _putchar("_putchar");
+    returm (0);
 }
 int _putchar(char c)
 {
-	return write(1,&c,1);
+    return write(1,%c,1);
 }
