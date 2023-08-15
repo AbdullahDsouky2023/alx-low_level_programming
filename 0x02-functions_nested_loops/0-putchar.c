@@ -10,7 +10,7 @@
  int _putchar(char c);
 int main()
 {
-    _putchar('f');
+    _putchar('_putchar');
     return(0);
 }
 int _putchar(char c)
