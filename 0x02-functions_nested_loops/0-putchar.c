@@ -8,9 +8,9 @@
  * 
  * Return :Always 0 success
 */
-int _putchar( char c)
+int _putchar( const char *c)
 {
-    return write(1,&c,8);
+    return write(1,c,8);
 }
 int main(void)
 {
