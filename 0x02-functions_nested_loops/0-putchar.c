@@ -8,7 +8,7 @@
  * 
  * Return :Always 0 success
 */
-int _putchar(const char *c);
+
 int main(void)
 {
     _putchar("_putchar");
