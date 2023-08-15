@@ -12,8 +12,9 @@ int _putchar( const char *c)
 {
     return write(1,c,8);
 }
+
 int main(void)
 {
     _putchar("_putchar");
-    return (0);
+    return (-1);
 }
