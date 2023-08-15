@@ -9,18 +9,18 @@
 
 void print_alphabet_x10(void)
 {
-  char str='a';
   int counter=0;
-  
-  while(str<='z')
+  while(counter<=9){
+  char str='a';
+  while(str <='z')
   {
     _putchar(str);
     str++;
-  if(str > 'z' && counter != 9)
-{
-	str='a';
-	counter++;
-   _putchar('\n');
-}
-}
+  }
+    _putchar('\n');
+  if(str=='z'){
+    str ='a';
+  }
+  counter++;
+ 
 }
