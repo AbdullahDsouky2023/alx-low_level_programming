@@ -5,11 +5,11 @@
  *
  * Description :"function for pringing statement"
  *
- * Return : Alawys0 (Success)
+ * Return : Alawys 0 (Success)
 */
 
 int main(void)
 {
-	printf("0-putchar.c");
+	printf("_putchar");
 	return (0);
 }
