@@ -17,11 +17,9 @@ void print_alphabet_x10(void)
     _putchar(str);
     str++;
   if(str == 'z' && counter != 9)
-  {
-	  putchar(str);
-	  _putchar('\n');
-	  str='a';
-	  counter++;
-  }
+{_putchar(str);
+  _putchar('\n');
+    str='a';
+    counter++;}
   }
 }
