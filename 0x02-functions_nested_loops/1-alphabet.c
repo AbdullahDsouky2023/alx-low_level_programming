@@ -8,7 +8,7 @@
  * Return :Always 0 success
 */
 
-int print_alphabet(void){
+void print_alphabet(void){
   char str='a';
   int i=0;
   while(str<='z'){
