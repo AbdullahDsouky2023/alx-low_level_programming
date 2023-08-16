@@ -1,4 +1,4 @@
-intranet.alxswe.com/proj#include "main.h"
+#include "main.h"
 /**
  * add add two integers
  * @a: first input
