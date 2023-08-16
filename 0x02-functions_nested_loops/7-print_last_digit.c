@@ -9,5 +9,10 @@
  */
 int print_last_digit(int x)
 {
-	return (printf("%d",x %10));
+	int lastDig=x % 10;
+	if(x < 0 )
+	{
+		lastDig=(-x) % 10;
+	}
+	return (printf("%d",lastDig));
 }
