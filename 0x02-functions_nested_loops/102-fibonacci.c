@@ -1,14 +1,14 @@
 #include "main.h"
 /**
-main - Entry point
-Description: prints the first 50 Fibonacci numbers
-separated starting with 1 and 2 folled by a new line
-stand
-Return: Always 0 (Success)
+ * main - Entry point
+ * Description: prints the first 50 Fibonacci numbers
+ * separated starting with 1 and 2 folled by a new line
+ * stand
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
-       	int count;
+	int count;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 
 	for (count = 0; count < 50; count++)
