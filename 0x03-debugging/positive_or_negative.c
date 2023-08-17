@@ -3,9 +3,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
-  *  main - Entry point
+  *  positive_or_negative - Entry point
   *
   *  Description: 'the program's description'
+  *
+  *  @i :the parameter that wated to be tested
   *
   *  Return: Always 0 (Success)
 */
