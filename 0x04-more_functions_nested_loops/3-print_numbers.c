@@ -6,9 +6,12 @@
 
 void print_numbers(void)
 {
-	for (int i=48; i<=57; i++)
+	int i = 48;
+
+	while (i <= 57)
 	{
 		_putchar(i);
+		i++;
 	}
 	_putchar('\n');
 }
