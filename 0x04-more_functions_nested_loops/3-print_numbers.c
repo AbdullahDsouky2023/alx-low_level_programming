@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_numbers- checks is it is uppercase4 or not 
+ *  print_numbers- checks is it is uppercase4 or not
 */
 
 void print_numbers(void)
