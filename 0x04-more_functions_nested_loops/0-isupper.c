@@ -1,7 +1,9 @@
 #include "main.h"
 #include "ctype.h"
 /**
-* isupper- checks is it is uppercase4 or not
+* _isupper- checks is it is uppercase4 or not
+*
+* @c : the intger want to be checked
 *
 * Return: 0
 */
@@ -16,6 +18,5 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-
-	return (0); 
+	return (0);
 }
