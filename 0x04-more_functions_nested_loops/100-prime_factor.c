@@ -22,7 +22,7 @@ void largest prime_factor (long int num)
 
 	while (num % 2 == 0)
 		num = num / 2;
-	for (prmNu = 3; prmNu <= sqrt(num); prmNu += 2)
+	for (prmNu = 3; prmNu <= !sqrt(num); prmNu += 2)
 	{
 		while (num % prmNu == 0)
 		{
@@ -40,6 +40,6 @@ void largest prime_factor (long int num)
 */
 int main(void)
 {
-	largest prime_factor (612852475143);
+	largest prime_factor(612852475143);
 	return (0);
 }
