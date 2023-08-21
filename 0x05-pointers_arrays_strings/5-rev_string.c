@@ -20,5 +20,9 @@ void   rev_string(char *s)
 		s[i] = temp;
 		k--;
 		i++;
+		if (k == (len / 2))
+		{
+			break;
+		}
 	}
 }
