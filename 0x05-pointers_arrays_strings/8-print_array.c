@@ -12,8 +12,10 @@
        while(i < n){
           printf("%d",a[i]);
 	  if (i != (n-1))
+	  {
 		  putchar(',');
-	  putchar(' ');
+		  putchar(' ');
+	  }
            i++;
        }
        putchar('\n');
