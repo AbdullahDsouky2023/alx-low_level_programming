@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+#include "main.h"
 void puts2(char *str)
 {
 	int i = 0;
@@ -11,4 +11,5 @@ void puts2(char *str)
 		putchar(str[i]);
 		i+=2;
 	}
+	putchar('\n');
 }
