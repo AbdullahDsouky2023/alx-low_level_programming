@@ -8,5 +8,6 @@
 */
 int _atoi(char *s)
 {
+	 strcpy(str,s);
       return (atoi(s));
 }
