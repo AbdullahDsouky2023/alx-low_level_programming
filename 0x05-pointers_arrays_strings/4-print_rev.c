@@ -1,12 +1,17 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ *  print_rev - check the code
+ *  @s: para to be used
  */
 
-void _puts(char *str)
+void  print_rev(char *s)
 {
-	puts(str);
+	int len = _strlen(s);
+
+	while(len > 0)
+	{
+		_putchar(s[len]);
+	}
+	_putchar('\n');
 }
