@@ -6,8 +6,7 @@
  * @dest : the char to know
  * @src : the char to know
 */
- char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-      strcpy(dest, src);
-}
-       
+	return (strcpy(dest, src));
+}       
