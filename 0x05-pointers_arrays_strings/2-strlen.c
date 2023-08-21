@@ -3,7 +3,8 @@
 /**
  * _strlen - function
  * @s :the char to know it;s length
- * Return : the length of char
+ * Description :' fef '
+ * Return: Always strlen(s).
 */
 
 int _strlen(char *s)
