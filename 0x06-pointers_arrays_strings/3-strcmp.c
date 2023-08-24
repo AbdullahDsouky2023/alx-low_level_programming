@@ -14,18 +14,18 @@ int _strcmp(char *s1, char *s2)
 	int length2 = strlen(s2);
 	int diff;
 
-	while( i < length2 && i < length )
+	while (i < length2 && i < length)
 	{
-		if(s1[i] == s2[i])
+		if (s1[i] == s2[i])
 		{
-			diff = 0 ;
+			diff = 0;
 		}
-		else if (s1[i]!=s2[i])
+		else if (s1[i] != s2[i])
 		{
-			diff = s1[i]-s2[i];
+			diff = s1[i] - s2[i];
 			break;
 		}
 		i++;
 	}
-	return diff;
+	return (diff);
 }
