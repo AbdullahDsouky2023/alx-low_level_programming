@@ -11,8 +11,6 @@ char *cap_string(char *s)
             s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{' ||
             s[i] == '}') {
           if(s[i + 1] >= 'a' && s[i + 1] <= 'z'){
-         putchar(s[i]);
-         putchar('\n');
          s[i + 1] -=32;
               
           }
