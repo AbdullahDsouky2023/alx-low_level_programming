@@ -27,6 +27,7 @@ char *_strcat(char *dest, char *src)
                 i++;
 
     }
-    *dest=*str2;
-return (str2);    
+strcpy(dest, str2); 
+    free(str2); 
+    return dest;
 }
