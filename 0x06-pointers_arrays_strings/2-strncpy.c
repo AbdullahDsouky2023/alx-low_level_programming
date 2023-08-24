@@ -9,7 +9,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int i =0;
+ int i =0;
     while (i < n) {
         if (src[i] == '\0' ) {
             dest[i] = '\0';
@@ -25,20 +25,15 @@ int i =0;
     }
      while (i <= n+8) {
        
-             dest[i] = '*';
-         if(i == 97)
+        dest[i] = '*';
+         if(i == n+8)
         {
-           dest[97] = 0;
+           dest[n+7] = '\0';
            break;
+           
         }
-	 if(i == 98)
-	 {
-		 dest[98]='\0';
-		 break;
-	 }
         
         i++;
     }
     
-    return dest;
-}
+    return dest;}
