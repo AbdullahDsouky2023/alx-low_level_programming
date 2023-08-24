@@ -17,6 +17,11 @@ char *cap_string(char *s)
 {
 	int i = 0;
 
+	if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+	{
+		s[i + 1] -= 32;
+	}
+
 	while (s[i] != '\0')
 	{
 		if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' ||
