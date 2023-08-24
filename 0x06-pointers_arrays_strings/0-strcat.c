@@ -1,13 +1,14 @@
 #include <stdio.h>
-char *_strcat(char *dest, char *src)
 #include <string.h>
+#include "main.h"
 #include <stdlib.h>
+char *_strcat(char *dest, char *src)
 {
     int i=0;
     int j =0;
     int length =strlen(dest);
     int length2 =strlen(src);
-    char *str2 =(char *)malloc(length + length2 + 1);
+       char *str2 = (char *)malloc((length + length2 + 1) * sizeof(char));
 
     while(dest[i] != '\0')
     {
@@ -26,6 +27,6 @@ char *_strcat(char *dest, char *src)
                 i++;
 
     }
-return (str2);
-       
+    *dest=*str2;
+return (str2);    
 }
