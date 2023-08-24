@@ -22,13 +22,16 @@ int i =0;
      while (i < n) {
         dest[i] = 0;
         i++;
-        if(i == n)
-        {
-            break;
-        }
     }
-     while (i <= 98) {
-        dest[i] = '*';
+     while (i < 98) {
+       
+             dest[i] = '*';
+         if(i == 97)
+        {
+           dest[97] = 0;
+           break;
+        }
+        
         i++;
     }
     
