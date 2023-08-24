@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strcmp - Concatenates two strings.
  * @s1: The destination string.
@@ -13,7 +14,7 @@ int _strcmp(char *s1, char *s2)
 	int length2 = strlen(s2);
 	int diff;
 
-	while( i <= length2  )
+	while( i < length2 && i < length )
 	{
 		if(s1[i] == s2[i])
 		{
