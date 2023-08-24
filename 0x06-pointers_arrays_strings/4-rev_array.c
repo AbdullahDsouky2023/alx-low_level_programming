@@ -9,22 +9,20 @@
  */
 void reverse_array(int *a, int n)
 {
-  int i =n -1 ;
-  int *b = (int *)malloc(n * sizeof(int));
-  int j=0;
-  int k=0;
+	int i = n - 1;
+	int *b = (int *)malloc(n * sizeof(int));
+	int j = 0;
+	int k = 0;
 
-  while (0 <= i)
-  {
-      b[j]=a[i];
-      i--;
-      j++;
-  }
-while(k < n){
-    a[k]=b[k];
-    k++;
-}
-
-
-
+	while (i >= 0)
+	{
+		b[j] = a[i];
+		i--;
+		j++;
+	}
+	while (k < n)
+	{
+		a[k] = b[k];
+		k++;
+	}
 }
