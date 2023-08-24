@@ -8,7 +8,7 @@
  * Return: Pointer to the concatenated string.
  */
 char *_strncpy(char *dest, char *src, int n)
-int i =0;
+{int i =0;
     while (i < n) {
         if (src[i] == '\0' ) {
             dest[i] = '\0';
