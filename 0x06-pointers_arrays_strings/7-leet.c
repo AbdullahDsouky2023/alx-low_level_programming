@@ -7,7 +7,7 @@ char *leet(char* s) {
     char replacements[5] = {'4', '3', '0', '7', '1'};
     
     while (s[i] != '\0') {
-        int j = 0;// Flag to indicate if a replacement was made
+        int j = 0;
         
         while (j < 5) {
             if (s[i] == re[j] || s[i]==re2[j]) {
