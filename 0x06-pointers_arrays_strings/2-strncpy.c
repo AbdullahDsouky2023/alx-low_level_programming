@@ -23,7 +23,7 @@ int i =0;
         dest[i] = 0;
         i++;
     }
-     while (i < 98) {
+     while (i <= 98) {
        
              dest[i] = '*';
          if(i == 97)
@@ -31,6 +31,11 @@ int i =0;
            dest[97] = 0;
            break;
         }
+	 if(i == 98)
+	 {
+		 dest[98]='\0';
+		 break;
+	 }
         
         i++;
     }
