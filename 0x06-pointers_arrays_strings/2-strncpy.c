@@ -19,10 +19,6 @@ int i =0;
         }
         i++;
     }
-     while (i < n) {
-        dest[i] = 0;
-        i++;
-    }
      while (i <= 98) {
        
              dest[i] = '*';
