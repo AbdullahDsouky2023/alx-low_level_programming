@@ -23,7 +23,7 @@ int i =0;
         dest[i] = '\0';
         i++;
     }
-     while (i <= 98) {
+     while (i <= n+8) {
        
              dest[i] = '*';
          if(i == 97)
