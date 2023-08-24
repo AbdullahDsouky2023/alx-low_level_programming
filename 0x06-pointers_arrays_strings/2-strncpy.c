@@ -19,7 +19,7 @@ int i =0;
         }
         i++;
     }
-     while (i <= n) {
+     while (i < n) {
         dest[i] = 0;
         i++;
         if(i == n)
@@ -27,7 +27,7 @@ int i =0;
             break;
         }
     }
-     while (i < 98) {
+     while (i <= 98) {
         dest[i] = '*';
         i++;
     }
