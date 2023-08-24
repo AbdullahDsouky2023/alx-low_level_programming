@@ -8,19 +8,19 @@
 
 char *string_toupper(char *str)
 {
-    int i =0 ;
-    while(str[i] != '\0')
-    {
-        if(str[i] >= 97){
-        str[i]=str[i]-32;
+	int i = 0;
 
-        }else {
-
-                str[i]=str[i];
-
-        }
-
-        i++;
-    }
-  return str;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 97)
+		{
+			str[i] = str[i] - 32;
+		}
+		else
+		{
+			str[i] = str[i];
+		}
+		i++;
+	}
+	return (str);
 }
