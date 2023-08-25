@@ -3,13 +3,14 @@
 #include <stdio.h>
 char *rot13(char *s){
     char *replacement1="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    char *replacement2="NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-    
+    char *replacement2="NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"; 
     int i = 0;
-    while (i <strlen(s))
+    int length=strlen(s);
+    while (i <length)
     {
         int j = 0;
-        while (j < strlen(replacement1))
+	int reLength= strlen(replacement1);
+        while (j < reLength)
         {
         if (replacement1[j] == s[i]){
             
