@@ -24,6 +24,7 @@ char *rot13(char *s)
 			if (replacement1[j] == s[i])
 			{
 				s[i] = replacement2[j];
+				break;
 			}
 			j++;
 		}
