@@ -18,6 +18,10 @@ char *_strchr(char *s, char c)
 			start = &s[i];
 			break;
 		}
+		else 
+		{
+			start =NULL;
+		}
 		i++;
 	}
 	return (start);
