@@ -18,9 +18,9 @@ char *_strchr(char *s, char c)
 			start = &s[i];
 			break;
 		}
-		else 
+		else
 		{
-			start =NULL;
+			start = NULL;
 		}
 		i++;
 	}
