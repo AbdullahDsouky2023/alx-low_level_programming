@@ -5,11 +5,10 @@
  *
  * @s: the statement to be printed
  * Return: nothing
- */
- 
- void _puts_recursion(char *s)
+*/
+void _puts_recursion(char *s)
 {
-	static int i = 0;
+	static int i;
 
 	if (s[i] == '\0')
 	{
