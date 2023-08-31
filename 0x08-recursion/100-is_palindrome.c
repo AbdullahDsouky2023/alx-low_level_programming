@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  *  helper - function that returns the natural square root of a number
  * @n: num
