@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdlib.h>
 /**
  *  helper - function that returns the natural square root of a number
  * @n: num
@@ -8,7 +9,8 @@
  */
 
 int helper(char *s, int i, char *re) {
-    if (i != strlen(s)) {
+	int length =strlen(s);
+    if (i != length) {
         int reversedChar = strlen(s) - i - 1;
         if (reversedChar >= 0) {
             re[i] = s[reversedChar];
