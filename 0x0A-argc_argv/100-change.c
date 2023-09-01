@@ -29,22 +29,26 @@ int main(int argc, char *argv[])
         {
             if (values[i] == num)
             {
-                printf(" equal %d\n", 1);
+                printf("%d\n", 1);
+		break;
             }
             else
             {
-              printf(" bigger %d\n", num- values[i-1]);
+              printf("%d\n", num- values[i-1]);
+	      break;
             }
         }
         else if (num > 25)
         {
             if (num % 25 == 0)
             {
-                printf("Rounded value: %d\n", num / 25);
+                printf("%d\n", num / 25);
+		break;
             }
             else
             {
-                printf("Rounded value: %d\n", num / 25 + num % 25);
+                printf("%d\n", num / 25 + num % 25);
+		break;
             }
         }
         i++;
