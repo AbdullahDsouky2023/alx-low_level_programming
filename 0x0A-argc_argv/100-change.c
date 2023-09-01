@@ -63,8 +63,10 @@ int main(int argc, char *argv[])
 	if (num < 0)
 	{
 		printf("%d\n", 0);
-		return (0);
 	}
+	else
+	{
 	calculate_min(i, num);
+	}
 	return (0);
 }
