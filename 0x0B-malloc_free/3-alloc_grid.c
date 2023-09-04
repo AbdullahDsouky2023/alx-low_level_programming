@@ -27,11 +27,11 @@ void free_array(int **grid, int width)
  * free_array_wrapper - prints a grid of integers
  * Return: Nothing.
  */
-void free_array_wrapper(void)
+void free_array_wrapper(int width)
 {
     if (grid_to_free != NULL)
     {
-        free_array(grid_to_free);
+        free_array(grid_to_free,width);
     }
 }
 /**
