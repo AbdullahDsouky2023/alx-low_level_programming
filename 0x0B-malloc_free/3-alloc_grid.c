@@ -10,28 +10,29 @@ int **grid_to_free = NULL;
  *
  * Return: Nothing.
  */
-void free_array(int **grid, int width)
+void free_array(int **grid)
 {
-        int i;
-
-        if(grid_to_free != NULL)
+if (grid_to_free != NULL)
+    {
+        int i = 0;
+        while (grid[i] != NULL)
         {
-                for (i = 0;i < width;i++)
-                {
-                        free(grid[i]);
-                }
-                free(grid);
+            free(grid[i]);
+            i++;
         }
+        free(grid);
+    }
 }
+
 /**
  * free_array_wrapper - prints a grid of integers
  * Return: Nothing.
  */
-void free_array_wrapper(int width)
+void free_array_wrapper(void)
 {
     if (grid_to_free != NULL)
     {
-        free_array(grid_to_free,width);
+        free_array(grid_to_free);
     }
 }
 /**
