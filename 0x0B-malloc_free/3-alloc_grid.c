@@ -12,6 +12,11 @@ int **alloc_grid(int width, int height)
 {
     int **arr = (int **)malloc(height * sizeof(int *));
     int i = 0;
+
+    if (width <=0 || height <= 0)
+    {
+	    return (NULL);
+    }
     if (arr == NULL)
     {
         fprintf(stderr, "Memory allocation failed for rows.\n");
