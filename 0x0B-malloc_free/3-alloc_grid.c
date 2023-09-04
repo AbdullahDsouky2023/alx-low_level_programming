@@ -1,9 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
 int **grid_to_free = NULL;
 /**
- * afree_array - prints a grid of integers
+ * free_array_wrapper - prints a grid of integers
+ * Return: Nothing.
+ */
+void free_array_wrapper(void)
+{
+    if (grid_to_free != NULL)
+    {
+        free_array(grid_to_free);
+    }
+}
+/**
+ * free_array - prints a grid of integers
  * @width: width of the grid
  * @height: height of the grid
  *
@@ -54,6 +66,6 @@ int **alloc_grid(int width, int height)
 		i++;
 	}
 	grid_to_free = arr;
-	atexit(free_array);
+	atexit(free_array_wrapper);
 	return (arr);
 }
