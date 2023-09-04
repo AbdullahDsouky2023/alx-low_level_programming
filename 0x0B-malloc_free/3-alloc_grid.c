@@ -4,6 +4,26 @@
 
 int **grid_to_free = NULL;
 /**
+ * free_array - prints a grid of integers
+ * @width: width of the grid
+ * @height: height of the grid
+ *
+ * Return: Nothing.
+ */
+void free_array(int **grid, int width)
+{
+        int i;
+
+        if(grid_to_free != NULL)
+        {
+                for (i = 0;i < width;i++)
+                {
+                        free(grid[i]);
+                }
+                free(grid);
+        }
+}
+/**
  * free_array_wrapper - prints a grid of integers
  * Return: Nothing.
  */
@@ -13,26 +33,6 @@ void free_array_wrapper(void)
     {
         free_array(grid_to_free);
     }
-}
-/**
- * free_array - prints a grid of integers
- * @width: width of the grid
- * @height: height of the grid
- *
- * Return: Nothing.
- */
-void free_array(int **grid, int width)
-{
-	int i;
-
-	if(grid_to_free != NULL)
-	{
-		for (i = 0;i < width;i++)
-		{
-			free(grid[i]);
-		}
-		free(grid);
-	}
 }
 /**
  * alloc_grid - prints a grid of integers
