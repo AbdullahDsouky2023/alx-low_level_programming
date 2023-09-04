@@ -23,8 +23,6 @@ char *str_concat(char *s1, char *s2)
      {
          return (NULL);
      }
-     int i =0;
-     int j = 0;
      while (i < len1)
      {
          concatString[i] = s1[i];
