@@ -40,5 +40,6 @@ char *argstostr(int ac, char **av)
         strcat(arr, av[i]); 
     }
 
+        strcat(arr, "\n"); 
     return arr;
 }
