@@ -10,9 +10,13 @@ char **strtow(char *str)
     int words = 0;
     char **arr;
     int length =strlen(str);
-    if(length == 0 || (length == 1 && str[0] == ' '))
+    if(length == 0 )
     {
     return (NULL);
+    }
+    if ( length == 1)
+    {
+	    return (NULL);
     }
     while (i < length)
     {
