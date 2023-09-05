@@ -5,7 +5,8 @@ int get_words_length(char *str)
 {
     int i =0;
     int words = 1;
-     while (i < strlen(str))
+    int length =strlen(str);
+     while (i < length)
     {
         if (str[i] != ' ')
         {
@@ -20,12 +21,11 @@ int get_words_length(char *str)
 }
 int *get_word_length(char *str)
 {
-    int i = 0;
     int words = 0;
     int k =0;
     int *counts=(int *)malloc (sizeof(int) * words);
-
-    while (k < strlen(str))
+    int length=strlen(str);
+    while (k < length)
     {
         if (str[k] != ' ')
         {
@@ -45,16 +45,16 @@ char **seperate_sting(char *str,int wordsCount,int *counts)
     int k =0;
     int words = 0;
     int count = 0;
+    int length=strlen(str);
     
     char **arr = (char **)malloc(sizeof(char *) * (wordsCount + 1));
 
-    while (k < strlen(str))
+    while (k < length)
     {
         if (str[k] != ' ')
         {
             if (count == 0)
             {
-                // Allocate memory for each word
                 arr[words] = (char *)malloc(sizeof(char) * counts[words]);
                 if (arr[words] == NULL)
                 {
