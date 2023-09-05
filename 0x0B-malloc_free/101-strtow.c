@@ -5,13 +5,12 @@
 char **strtow(char *str)
 {
     int i = 0;
-    int j = 0;
     int k = 0;
     int count = 0;
     int words = 0;
     char **arr;
-
-    while (i < strlen(str))
+    int length =strlen(str);
+    while (i < length)
     {
         if (str[i] != ' ')
         {
@@ -23,7 +22,6 @@ char **strtow(char *str)
         i++;
     }
 
-    // Allocate memory for an array of char*
     arr = (char **)malloc(sizeof(char *) * (words + 1));
 
     if (arr == NULL)
@@ -32,17 +30,15 @@ char **strtow(char *str)
         exit(1);
     }
 
-    // Reset counters for a new pass
     i = 0;
     words = 0;
 
-    while (k < strlen(str))
+    while (k < length)
     {
         if (str[k] != ' ')
         {
             if (count == 0)
             {
-                // Allocate memory for each word
                 arr[words] = (char *)malloc(sizeof(char) * 50);
                 if (arr[words] == NULL)
                 {
@@ -56,7 +52,7 @@ char **strtow(char *str)
 
             if (str[k + 1] == ' ' || str[k + 1] == '\0')
             {
-                arr[words][count] = '\0'; // Null-terminate the word
+                arr[words][count] = '\0'; 
                 words++;
                 count = 0;
             }
@@ -65,7 +61,6 @@ char **strtow(char *str)
         k++;
     }
 
-    // Null-terminate the array of strings
     arr[words] = NULL;
 
     return arr;
