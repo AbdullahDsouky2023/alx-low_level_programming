@@ -26,7 +26,7 @@ char **strtow(char *str)
         i++;
     }
 
-    arr = (char **)malloc(sizeof(char *) * (words + 1));
+    arr = (char **)malloc(sizeof(char *) * (words ));
 
     if (arr == NULL)
     {
