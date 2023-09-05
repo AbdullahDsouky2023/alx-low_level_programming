@@ -43,7 +43,7 @@ char **strtow(char *str)
         {
             if (count == 0)
             {
-                arr[words] = (char *)malloc(sizeof(char) * 5);
+                arr[words] = (char *)malloc(sizeof(char) * 6);
                 if (arr[words] == NULL)
                 {
                     fprintf(stderr, "Memory allocation failed for arr[%d].\n", words);
