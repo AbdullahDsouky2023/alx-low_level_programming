@@ -41,7 +41,6 @@ int *get_word_length(char *str)
 }
 char **seperate_sting(char *str,int wordsCount,int *counts)
 {
-    int i=0;
     int k =0;
     int words = 0;
     int count = 0;
@@ -68,7 +67,7 @@ char **seperate_sting(char *str,int wordsCount,int *counts)
 
             if (str[k + 1] == ' ' || str[k + 1] == '\0')
             {
-                arr[words][count] = '\0'; // Null-terminate the word
+                arr[words][count] = '\0'; 
                 words++;
                 count = 0;
             }
@@ -80,8 +79,6 @@ char **seperate_sting(char *str,int wordsCount,int *counts)
 }
 char **strtow(char *str)
 {
-
-    int count = 0;
     int words = 0;
     int length =strlen(str);
     char **arr;
