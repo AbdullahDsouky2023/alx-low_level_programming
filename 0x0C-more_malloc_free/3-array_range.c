@@ -16,11 +16,11 @@ int *array_range(int min, int max)
 	int i = min;
 
 	ptr = (int *) malloc(sizeof(int) * max + 1);
-	if(ptr == NULL || min > max)
+	if (ptr == NULL || min > max)
 	{
 		return (NULL);
 	}
-	while(i <= max)
+	while (i <= max)
 	{
 		ptr[i] = i;
 		i++;
