@@ -9,12 +9,11 @@
  * @n : n to concat
  * Return: Always 0.
  */
- 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char* conStr;
+	char *conStr;
 	unsigned int i = 0;
-	unsigned int j =0;
+	unsigned int j = 0;
 	unsigned int length1;
 	unsigned int length2;
 
@@ -26,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	conStr= (char *) malloc(strlen(s1) + strlen(s2) + 1);
+	conStr = (char *) malloc(strlen(s1) + strlen(s2) + 1);
 	if (conStr == NULL)
 	{
 		return (NULL);
@@ -39,15 +38,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	while (i < length1)
 	{
-		conStr[i]=s1[i];
+		conStr[i] = s1[i];
 		i++;
 	}
 	while (j < n)
 	{
-		conStr[i]=s2[j];
+		conStr[i] = s2[j];
 		i++;
 		j++;
 	}
 	conStr[i] = '\0';
 	return (conStr);
- }
+}
