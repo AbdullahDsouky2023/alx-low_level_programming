@@ -26,17 +26,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	else if (num < 0)
-	{
-		return (NULL);
-	}
 	length1 = strlen(s1);
 	length2 = strlen(s2);
 	if (n >= length2)
 	{
 		n = length2;
 	}
-	conStr = malloc(sizeof(*conStr) * (length1 + n + 1));
+	conStr = malloc(sizeof(char) * (length1 + n + 1));
 	if (conStr == NULL)
 	{
 		return (NULL);
