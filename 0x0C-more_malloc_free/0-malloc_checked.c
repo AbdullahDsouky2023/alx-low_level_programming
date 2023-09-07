@@ -7,12 +7,14 @@
  * @b : the interger to reserve to
  * Return: Always 0.
  */
+
 void *malloc_checked(unsigned int b)
 {
-    void *ptr = malloc(sizeof(b));
-    if(ptr == NULL)
-    {
-       exit(98);
-    }
-   return (ptr);
-} 
+	void *ptr = malloc(b);
+
+	if (ptr == NULL)
+	{
+		exit(98);
+	}
+	return (ptr);
+}
