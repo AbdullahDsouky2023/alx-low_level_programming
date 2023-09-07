@@ -1,7 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+/**
+ * _strlen - calculate and return string length
+ * @string: string
+ * Return: string length
+ */
+int _strlen(char *string)
+{
+	int i;
 
+	for (i = 0; string[i] != '\0'; i++)
+		;
+	return (i);
+}
 /**
  * *string_nconcat - Write a function that concatenates two string
  * @s1 : first string
@@ -25,8 +37,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	length1 = strlen(s1);
-	length2 = strlen(s2);
+	length1 = _strlen(s1);
+	length2 = _strlen(s2);
 	if (n >= length2)
 	{
 		n = length2;
