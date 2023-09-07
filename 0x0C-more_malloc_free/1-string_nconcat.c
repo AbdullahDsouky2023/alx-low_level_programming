@@ -48,10 +48,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	while (j < n)
 	{
-		conStr[i+ j] = s2[j];
+		conStr[i] = s2[j];
 		i++;
 		j++;
 	}
-	conStr[i+j] = '\0';
+	conStr[i] = '\0';
 	return (conStr);
 }
