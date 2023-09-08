@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
+#include <ctype.h>
+
 
 /**
  * main - check the code for
@@ -23,8 +26,8 @@ int main(int argc,char *argv[])
         printf("Error\n");
         exit(98);
     }
-     num1 = argv[1];
-     num2 = argv[2];
+     num1 = atoi(argv[1]);
+     num2 = atoi(argv[2]);
      mul = num1 * num2;
     return mul;
 }
