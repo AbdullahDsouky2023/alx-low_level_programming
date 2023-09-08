@@ -5,22 +5,22 @@
 /**
  * _realloc - check the code for
  * @ptr :pointer
- * @old_size : old 
+ * @old_size : old
  * @new_size : new size
  * Return: Always 0.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-    void *ptr2 = malloc(new_size);
-    if (ptr2 == NULL) {
-        return NULL; 
-    }
+	void *ptr2 = malloc(new_size);
 
-    
-    if (ptr != NULL) {
-        memcpy(ptr2, ptr, old_size);
-        free(ptr);
-    }
-
-    return ptr2;
+	if (ptr2 == NULL)
+	{
+		return (NULL);
+	}
+	if (ptr != NULL)
+	{
+		memcpy(ptr2, ptr, old_size);
+		free(ptr);
+	}
+	return (ptr2);
 }
