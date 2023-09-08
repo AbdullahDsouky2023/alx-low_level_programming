@@ -21,7 +21,7 @@ int main(int argc,char *argv[])
         printf("Error\n");
         exit(98);
     }
-    if(!isdigit(num1) || !isdigit(num2))
+    if(isdigit(num1) || isdigit(num2))
     {
         printf("Error\n");
         exit(98);
