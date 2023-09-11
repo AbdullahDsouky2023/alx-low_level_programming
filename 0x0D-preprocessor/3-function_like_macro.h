@@ -1,3 +1,4 @@
-#ifndef ABC()
-#define ABC(A) abs(a)
+#ifndef ABS
+#include <stdlib.h>
+#define ABS(a) abs(a)
 #endif
