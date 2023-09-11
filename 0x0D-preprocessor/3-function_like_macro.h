@@ -1,3 +1,3 @@
 #ifndef ABS
-#define ABS(a) ((a > 0) ? (a) : (-a))
+#define ABS(x) ((unsigned int)((x > 0) ? (x) : (-x)))
 #endif
