@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <string.h>
 #include <stdlib.h>
 /**
  * new_dog  - check the code
@@ -18,5 +19,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	newDogay->name = name;
 	newDogay->age = age;
 	newDogay->owner = owner;
+	strcpy((*newDogay).name, name);
 	return (newDogay);
 }
