@@ -1,24 +1,32 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include<stdlib.h>
+/**
+ * main - check the code
+ * @argc: number
+ * @argv: number
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
-	int a,b;
-	char *s;
-	int (*fun)(int, int) ;
-	int result;
-	if (argc == 4 )
+	int num1, num2;
+	char *operator;
+	int (*fun)(int, int);
+	int calc;
+
+	if (argc == 4)
 	{
-		a = atoi(argv[1]);
-		b =atoi(argv[3]);
-		s=argv[2];
-		fun =get_op_func(s);
-		result =fun(a,b);
-		printf("%d\n", result);
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[3]);
+		operator = argv[2];
+		fun = get_op_func(s);
+		calc = fun(a, b);
+		printf("%d\n", calc);
 	}
-	if (argc != 4){
+	if (argc != 4)
+	{
 		printf("Error\n");
 		exit(98);
 	}
-	return 0;
+	return (0);
 }
