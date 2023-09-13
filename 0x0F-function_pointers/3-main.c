@@ -19,8 +19,8 @@ int main(int argc, char *argv[])
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[3]);
 		operator = argv[2];
-		fun = get_op_func(s);
-		calc = fun(a, b);
+		fun = get_op_func(operator);
+		calc = fun(num1, num2);
 		printf("%d\n", calc);
 	}
 	if (argc != 4)
