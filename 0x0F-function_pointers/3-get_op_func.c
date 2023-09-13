@@ -15,7 +15,7 @@ int (*get_op_func(char *s))(int a, int b)
     {
 	    if (ops[i][0] == s)
 	    {
-		    return ops[i][1](a ,b)
+		    return ops[i][1](a ,b);
 	    }
 	   i++;
     }
