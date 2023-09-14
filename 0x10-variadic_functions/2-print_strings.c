@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -12,12 +11,12 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...){
     va_list ptr;
-    int i = 0;
-    char *sate;
+   unsigned  int i = 0;
+   char *state;
     va_start(ptr, n);
     while (i < n)
     {
-        state=va_arg(ptr,char*)
+        state = va_arg(ptr,char*);
         if (state == NULL){
         printf("(nil");
             
