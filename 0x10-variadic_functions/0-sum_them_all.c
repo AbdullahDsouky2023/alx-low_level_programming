@@ -21,6 +21,7 @@ int sum_them_all(const unsigned int n, ...)
 	while (i < n)
 	{
 		sum+=va_arg(nptr, int);
+		i++;
 	}
 	va_end(nptr);
 	return (sum);
