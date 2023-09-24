@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "lists.h"
 /**
  * print_list  - singly linked list
  * @h: points to the next node
@@ -9,7 +9,8 @@
  * Description: singly linked list node structure
  */
 
-int print_list(const list_t *h)
+
+size_t print_list(const list_t *h)
 {
 	unsigned int num = 0;
 
